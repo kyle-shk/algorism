@@ -58,3 +58,17 @@ console.log(solution("ksekkset"));
 //이걸확인하려면 for문반복을 이용해 해당문자의 위치와 ㅑndexOf를 이용해 해당문자의 위치인덱스를 구해서 비교하자
 //해당위치 인데스와 Indexof로나온값이 다르면 그 값은 제가하자
 //처음에 일반 문자열을 만들고 조건에맞는(if (s.indexof(문자열위치))==s[i]) 가 같은애들만 문자열에더하자))
+
+let a = "asdee";
+console.log(a.indexOf("s"));
+
+function solution(a) {
+  let answer = "";
+  for (let i = 0; i < a.length; i++) {
+    // if(a.indexOf(a[i]) == i)
+    // console.log(a[i], i, a.indexOf(a[i]));
+    if (a.indexOf(a[i]) == i) answer += a[i];
+  }
+  return answer;
+}
+console.log(solution("ksekkset"));

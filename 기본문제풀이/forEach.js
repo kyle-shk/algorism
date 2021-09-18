@@ -27,7 +27,7 @@
 // }
 //기본예제
 // a = [10, 11, 12, 13, 14, 15];
-// let answer = a.map(function (v, i) {
+// let answer = a.map(function (v) {
 //   return v * v;
 // });
 // console.log(answer);
@@ -39,7 +39,7 @@
 // });
 // console.log(answer);
 
-//filter
+// //filter
 // 새로운배열을 생성함 그러나 map이랑 다르게 굳이 새로운 배열의 길이가 원본배열과 같을 필요는 없음
 //,정확하게 원하는 원소만 배열을 생성해서 리턴함
 //내부
