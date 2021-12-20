@@ -36,13 +36,13 @@
 // // expected output: "zilla"
 
 function solution(a) {
-  let num;
-  if (a.length % 2 === 1) {
-    num = a.substr(Math.floor(a.length / 2), 1);
-  } else {
-    num = a.substr(Math.floor(a.length / 2 - 1), 2);
+  let num=''
+  if(a.length%2 === 1) {
+    num += a.substring(a.length/2,a.length/2+1)
+  } else{
+    num +=  a.substring(a.length/2-1,a.length/2+1)
   }
   return num;
 }
 
-console.log(solution("good"));
+console.log(solution("고구마건"));

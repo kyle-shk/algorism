@@ -1,31 +1,26 @@
-function solution(a) {
-  let answer = [];
-  let b = a.split("");
-  //   console.log("b : ", b);
-  for (let i = 0; i < b.length; i++) {
-    if (b[i] === "A") {
-      let c = b[i].replace(b[i], "#");
-      answer.push(c);
-    } else {
-      answer.push(b[i]);
-    }
-  }
-  let d = answer.join("");
-  console.log(d);
+// 정규식
+function solution(s){
+  let answer
+      answer=s.replace(/A/gi,'#')
+  return answer
 }
 
-// console.log(solution("BANANA"));
-solution("BANANA");
+let str="BANANA";
+console.log(solution(str));
 
-//2.문자열이용
-
-// function solution(s) {
-//   let answer = "";
-//   for (let x of s) {
-//     if (x === "A") answer += "#";
-//     else answer += x;
+// function solution(s){
+//   let answer="";
+//   for(let x of s){
+//       if(x=='A') answer+='#';
+//       else answer+=x;
 //   }
 //   return answer;
 // }
-// let str = "BANANA";
+
+// let str="BANANA";
 // console.log(solution(str));
+
+
+// 개념
+// 정규식: replace(/바뀔문자/g,바꿀문자)
+// 특정단어를바꾸고싶을떄는 빈문자열을만들고 특정조건에서 바뀌는식으로 코드짠뒤 그외의값은 원래의문자가들어가게끔한다.

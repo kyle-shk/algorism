@@ -1,12 +1,13 @@
-function solution(a, b) {
-  //   let answer = [];
-  let count = 0;
-  for (let i = 0; i < a; i++) {
-    if (b[i + 1] > b[i]) {
-      count++;
-    }
+function solution(b) {
+  let answer=1;
+  let max=b[0];
+  for(let i=1;i<b.length;i++) {
+    if(max<b[i]) {
+      answer++
+      max=b[i]
   }
-  return count;
+}
+  return answer;
 }
 let array = [130, 135, 148, 140, 145, 150, 150, 153];
-console.log(solution(8, array));
+console.log(solution(array));

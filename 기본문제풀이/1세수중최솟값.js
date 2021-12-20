@@ -5,8 +5,11 @@ function cal(a, b, c) {
   } else {
     answer = b;
   }
-  if (c < answer) {
-    answer = c;
+  // if (c < answer) {
+  //   answer = c;
+  // }
+  if (answer < c) {
+    console.log(answer);
   }
   console.log(answer);
 }

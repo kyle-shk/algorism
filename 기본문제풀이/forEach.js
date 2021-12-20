@@ -7,13 +7,12 @@
 //   }
 // }
 //forEach
-// a = [10, 11, 12, 13, 14, 15]; //v는 배열의 요소들 ,i는 배열의 인덱스
-// a.forEach(
-//   function (v, i) {
-//     console.log(v, i, this);
-//   },
-//   [1, 2]
-// );
+a = [10, 11, 12, 13, 14, 15]; //v는 배열의 요소들 ,i는 배열의 인덱스
+a.forEach(
+  function (v, i) {
+    console.log(v, i, this);
+  },
+);
 
 //map 새로운 배로운 만듬
 

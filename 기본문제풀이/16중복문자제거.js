@@ -1,7 +1,6 @@
 // function solution(s) {
 //   let answer = "";
 //   for (let i = 0; i < s.length; i++) {
-//     // console.log(s[i], i, s.indexOf(s[i]));
 //     if (s.indexOf(s[i]) == i) answer += s[i];
 //   }
 //   return answer;
@@ -9,24 +8,24 @@
 // console.log(solution("ksekkset"));
 
 //특정문자의 갯수
-function solution(s) {
-  let answer = 0;
+// function solution(s) {
+//   let answer = 0;
   //   let pos = s.indexOf("k");
   //   while (pos !== 1) {
   //     answer += 1;
   //     pos = s.indexOf("k", pos + 1);
   //   }
   //for문이용
-  for (let i = 0; i < s.length; i++) {
-    if (s[i] === "k") {
-      answer += 1;
-    } else {
-      continue;
-    }
-  }
-  return answer;
-}
-console.log(solution("ksekkset"));
+//   for (let i = 0; i < s.length; i++) {
+//     if (s[i] === "k") {
+//       answer += 1;
+//     } else {
+//       continue;
+//     }
+//   }
+//   return answer;
+// }
+// console.log(solution("ksekkset"));
 
 // indexOf() 함수
 // 특정 문자 위치 찾기
@@ -55,19 +54,18 @@ console.log(solution("ksekkset"));
 //문제 푸는순서
 //공통된문자을 찾아야한다
 //공통된문자란 처음나오는 문자의위치와  해당문자의 인댁스가 같은걸 말한다
-//이걸확인하려면 for문반복을 이용해 해당문자의 위치와 ㅑndexOf를 이용해 해당문자의 위치인덱스를 구해서 비교하자
+//이걸확인하려면 for문반복을 이용해 해당문자의 위치와 indexOf를 이용해 해당문자의 위치인덱스를 구해서 비교하자
 //해당위치 인데스와 Indexof로나온값이 다르면 그 값은 제가하자
 //처음에 일반 문자열을 만들고 조건에맞는(if (s.indexof(문자열위치))==s[i]) 가 같은애들만 문자열에더하자))
 
-let a = "asdee";
-console.log(a.indexOf("s"));
+// let a = "asdee";
+// console.log(a.indexOf("s"));
 
 function solution(a) {
   let answer = "";
-  for (let i = 0; i < a.length; i++) {
-    // if(a.indexOf(a[i]) == i)
-    // console.log(a[i], i, a.indexOf(a[i]));
-    if (a.indexOf(a[i]) == i) answer += a[i];
+  for(let x of a) {
+    if(a.indexOf(x) !== answer.indexOf(x)) answer += x;
+    else answer +=''
   }
   return answer;
 }

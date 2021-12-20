@@ -1,83 +1,30 @@
-function odd(a) {
-  let sum = 0;
-
-  for (let i = 0; i < a.length; i++) {
-    if (a[i] % 2 !== 0) {
-      sum += a[i];
-    }
-  }
-
-  return sum;
-}
-function small(b) {
-  let min = Number.MAX_SAFE_INTEGER;
-  let a;
-  //   console.log("min : ", min);
-  for (let i = 0; i < b.length; i++) {
-    if (b[i] % 2 != 0) {
-      a = b[i];
-      //   console.log("b: ", a);
-      if (a < min) {
-        // ????
-        min = a;
-        // console.log("min11 : ", min); //???
-      }
-    }
-  }
-  return min;
-}
-// function small(b) {
-//   let min = Math.max(...b);
-//   let a;
-//   for (let i = 0; i < b.length; i++) {
-//     if (b[i] % 2 != 0) {
-//       a = b[i];
-//       if (a < min) {
-//         min = a;
-//       }
+// function solution(arr) {
+//   let answer=[];
+//   let sum=0,min=Number.MAX_SAFE_INTEGER;
+//   for(let x of arr) {
+//     // 1.홀수판별
+//     if(x%2 ===1) {
+//       // 2.홀수인것들의합
+//       sum +=x;
+//       // 3.홀수중 가장작은수판별
+//       if(x<min) min=x;
 //     }
 //   }
-//   return min;
+//   answer.push(min)
+//   answer.push(sum)
+//   return answer
 // }
-// function small(b){
-//     let min = Infinity;
-//     let a;
-//     for (let i=0; i<b.length;i++){
-//         if(b[i]%2 != 0){
-//             a = b[i];
-//             if ( a< min){
-//                 min = a
-//             }
-//         }
-//     }
-//     return min
-// }
-console.log("small", small([12, 77, 38, 41, 53, 92, 85]));
-console.log("odd", odd([12, 77, 38, 41, 53, 92, 85]));
+// arr=[12,77,38,41,53,92,85];
+// console.log(solution(arr))
 
-function odd(a) {
-  let sum = 0;
 
-  for (let i = 0; i < a.length; i++) {
-    if (a[i] % 2 !== 0) {
-      sum += a[i];
-    }
+function solution(day, arr){
+  let answer=0;
+  for(let x of arr) {
+    if(x%10 === day) answer++
   }
+  return answer
+}
 
-  return sum;
-}
-function small(b) {
-  let min = Infinity;
-  let a;
-  for (let i = 0; i < b.length; i++) {
-    if (b[i] % 2 != 0) {
-      a = b[i];
-      if (a < min) {
-        min = a;
-      }
-    }
-  }
-  return min;
-}
-console.log("small", small([12, 77, 38, 41, 53, 92, 85]));
-console.log("odd", odd([12, 77, 38, 41, 53, 92, 85]));
+arr=[25, 23, 11, 47, 53, 17, 33];
+console.log(solution(3, arr));

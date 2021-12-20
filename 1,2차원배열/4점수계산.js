@@ -1,12 +1,13 @@
 function solution(a, b) {
   let count = 0;
   let max = 0;
-  for (let i = 0; i < a; i++) {
-    if (b[i] == 1) {
-      count++;
-      max += count;
+  for(let i=0;i<a;i++) {
+    if(b[i] === 1) {
+      count += 1
+      max += count
     } else {
-      count = 0;
+      count = 0
+      // max += count
     }
   }
   return max;

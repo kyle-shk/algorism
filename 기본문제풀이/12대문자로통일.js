@@ -15,14 +15,29 @@
 // console.log(solution("ItisTimeTiStudy"));
 
 //문자열로풀기
+// function solution(a) {
+//   let answer = "";
+//   for (let i of a) {
+//     if (i === i.toLowerCase()) {
+//       answer += i.toUpperCase();
+//     } else {
+//       answer += i;
+//     }
+//   }
+
+//   return answer;
+// }
+// console.log(solution("ItisTimeTiStudy"));
+// 아스키코드
 function solution(a) {
   let answer = "";
   for (let i of a) {
-    if (i === i.toLowerCase()) {
-      answer += i.toUpperCase();
-    } else {
-      answer += i;
-    }
+    let num = i.charCodeAt()
+    if (num>=97 && num<=122 ) {
+      // 현재숫자임,문자로전환해야함
+      // answer += num-32
+      answer += String.fromCharCode(num-32);
+    } else answer += i
   }
 
   return answer;
