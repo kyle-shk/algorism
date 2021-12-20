@@ -22,3 +22,7 @@ function solution(b) {
 // // the value of `v` below will be `undefined`
 // Array.from({length: 5}, (v, i) => i);
 // // [0, 1, 2, 3, 4]
+
+// 새로알게된개념
+// 특정순위를 구할때는 미리 배열에 기초값을 넣어두고 조건을 만족했을때 배열의값들에 +1하는식으로 답을구하자
+// 초기화배열을 만드는법은 Array.from({length:?},()=>넣고싶은값)
