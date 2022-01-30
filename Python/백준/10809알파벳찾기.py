@@ -1,8 +1,6 @@
-n=input()
-abc='abcdefghizklmnopqrstuvwxyz'
+a=input()
+cnt=[0]*26
 
-for i in abc:
-    if i in n:
-        print(n.index(i),end=' ')
-    else:
-        print(-1,end=' ')
+for i in a:
+    cnt[ord(i)-97]+=1
+print(*cnt)

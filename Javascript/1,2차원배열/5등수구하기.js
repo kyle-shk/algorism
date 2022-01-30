@@ -1,6 +1,8 @@
 function solution(b) {
   let n = b.length;
-  let answer = Array.from({ length: 5 }, () => 1);
+  // let answer = Array.from({ length: 5 }, () => 1);
+  let answer = Array(5).fill(1)
+
   for (let i = 0; i < n; i++) {
     for (let j = 0; j < n; j++) {
       if (b[j] > b[i]) answer[i]++;
@@ -8,7 +10,7 @@ function solution(b) {
   }
   return answer;
 }
-
+console.log(solution([87,89,92,100,76]))
 
 
 // Array.from과 화살표 함수 사용하기

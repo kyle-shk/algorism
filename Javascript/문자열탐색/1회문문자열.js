@@ -1,15 +1,15 @@
-function solution(s){
-    let answer="YES";
-    let a = s.toLowerCase()
-    for(let i=0;i<s.length;i++) {
-        if(a[i] === a[s.length-i-1]) continue
-        else answer = 'NO'
-    }
-    return answer;
-}
+// function solution(s){
+//     let answer="YES";
+//     let a = s.toLowerCase()
+//     for(let i=0;i<s.length;i++) {
+//         if(a[i] === a[s.length-i-1]) continue
+//         else answer = 'NO'
+//     }
+//     return answer;
+// }
 
-let str="go1og";
-console.log(solution(str));
+// let str="go1og";
+// console.log(solution(str));
 
 // function solution(s){
 //     let answer="YES";
@@ -34,3 +34,19 @@ console.log(solution(str));
 
 // let str="gooG";
 // console.log(solution(str));
+
+function a(a) {
+    a=a.toLowerCase()
+    let result=''
+    for(let i=0;i<Math.floor((a.length)/2); i++) {
+        if(a[i]==a[a.length-i-1]) {
+            result = 'YES'
+        } else{
+            result = 'NO'
+        }
+    }
+    return result
+}
+
+let str="abcBA";
+console.log(a(str));
