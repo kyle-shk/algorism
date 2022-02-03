@@ -7,3 +7,5 @@ for t in range(T):
     a=a[s-1:e]
     a.sort()
     print("#%d %d" %(t+1, a[k-1]))
+
+    # 조건에맞는 리스트원소 인덱싱하기
