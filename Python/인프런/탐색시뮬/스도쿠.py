@@ -9,7 +9,7 @@ def check(a):
             return False
     for i in range(3):
         for j in range(3):
-            ch3=[0]*10
+            ch3=[0]*10  
             for k in range(3):
                 for s in range(3):
                     ch3[a[i*3+k][j*3+s]]=1

@@ -13,6 +13,7 @@ for i in range(m):
     else:
         for _ in range(e):
             a[q-1].insert(0,a[q-1].pop())
+# 모래시계모양으로 더하기
 res=0
 s=0
 e=n-1
@@ -25,4 +26,6 @@ for i in range(n):
     else:
         s-=1
         e+=1
-print(a)
+print(res)
+
+

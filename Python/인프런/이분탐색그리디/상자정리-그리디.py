@@ -13,3 +13,15 @@ while cnt !=k:
     li.sort(reverse=True)
 
 print(li[0]-li[-1])
+
+# n=int(input())
+# li=list(map(int,input().split()))
+# k=int(input())
+# li.sort(reverse=True)
+
+# li.sort()
+# for _ in range(k):
+#     li[0]+=1
+#     li[n-1]-=1
+#     li.sort()
+# print(li[n-1]-li[0])

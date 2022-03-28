@@ -1,17 +1,30 @@
+# def solution(num,arr):
+#     res=0
+#     s=e=len(arr)//2
+#     for i in range(num):
+#         for j in range(s,e+1):
+#             res += arr[i][j]
+#         if i<num//2:
+#             s-=1
+#             e+=1
+#         else:
+#             s+=1
+#             e-=1
+#     return res
+
 def solution(num,arr):
     res=0
-    s=e=len(arr)//2
+    s1=s2=len(arr)//2
     for i in range(num):
-        for j in range(s,e+1):
+        for j in range(s1,s2+1):
             res += arr[i][j]
         if i<num//2:
-            s-=1
-            e+=1
+            s1-=1
+            s2+=1
         else:
-            s+=1
-            e-=1
+            s1 +=1
+            s2 -=1
     return res
-
 
 
 arr= [

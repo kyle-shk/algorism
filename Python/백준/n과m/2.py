@@ -7,8 +7,10 @@ def dfs(start):
         return
     
     for i in range(start,n+1):
-        # if i not in s:
+        if i not in s:
             s.append(i)
             dfs(i+1)
             s.pop()
 dfs(1)
+
+# https://zidarn87.tistory.com/331

@@ -25,3 +25,4 @@ while lt<=rt:
 
 print(len(res))
 print(res)
+

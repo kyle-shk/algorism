@@ -1,7 +1,7 @@
 n,m = list(map(int,input().split()))
  
 s = []
- 
+
 def dfs():
     if len(s)==m:
         print(' '.join(map(str,s)))
@@ -12,5 +12,6 @@ def dfs():
             s.append(i)
             dfs()
             s.pop()
+           
  
 dfs()

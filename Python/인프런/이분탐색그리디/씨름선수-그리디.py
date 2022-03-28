@@ -4,7 +4,8 @@ for _ in range(n):
     a,b=map(int,input().split())
     li.append((a,b))
 
-li.sort(reverse=True)
+# li.sort(reverse=True)
+li.sort(key=lambda x: -x[0])
 cnt=0
 largest=0
 answer=[]
@@ -15,3 +16,4 @@ for a,b in li:
         cnt+=1
 print(cnt)
 print(answer)
+
